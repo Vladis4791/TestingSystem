@@ -1,0 +1,26 @@
+.Button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    background: #f57037;
+    border-radius: 10px;
+    width: 100px;
+    margin-right: 20px;
+    font-weight: bold;
+    color: #fff;
+    transition: all .3s;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:disabled {
+        background-color: #b7b2b2;
+        cursor: default;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

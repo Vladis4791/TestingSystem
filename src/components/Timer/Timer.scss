@@ -1,0 +1,31 @@
+@use "../../styles/colors" as c;
+
+.Timer {
+	padding: 15px;
+	border: 2px solid c.$grey;
+	width: 100px;
+	text-align: center;
+	border-radius: 10px;
+
+	&.littleTime {
+		animation: blinker 1.5s linear infinite;
+
+		@keyframes blinker {
+			// 25% {
+			// 	border: 1px solid c.$grey;
+            //     outline: 1px solid #fff;
+			// }
+			50% {
+				border: 2px solid #f93f3f;
+				// outline: 1px solid #f93f3f;
+				color: #f93f3f;
+				// font-weight: bold;
+			}
+
+            // 75% {
+            //     border: 1px solid c.$grey;
+            //     outline: 1px solid #fff;
+            // }
+		}
+	}
+}

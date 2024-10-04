@@ -1,0 +1,11 @@
+.ManyAnswersQuestion {
+    .checkboxField {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+
+        .checkboxLabel {
+            margin-left: 20px;
+        }
+    }
+}

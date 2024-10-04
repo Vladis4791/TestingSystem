@@ -1,0 +1,31 @@
+@use '../../../styles/colors' as c;
+
+.ProgressItem {
+    height: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: 5px;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &.solved {
+        background: c.$blue;
+    }
+
+    &.unavailable {
+        background: c.$grey;
+        cursor: default;
+    }
+
+    &.head {
+        background: c.$green;
+    }
+
+    &.active {
+        background: c.$orange !important;
+    }
+}

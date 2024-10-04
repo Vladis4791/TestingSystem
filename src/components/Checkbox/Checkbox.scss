@@ -1,0 +1,38 @@
+@use '../../styles/colors' as c;
+
+.Checkbox {
+	width: 30px;
+	height: 30px;
+	border: 1px solid rgb(205, 205, 205);
+    border-radius: 5px;
+	background-color: #fff;
+
+	label {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+
+		img {
+			display: none;
+		}
+	}
+
+	input {
+		position: absolute;
+		z-index: -1;
+		opacity: 0;
+	}
+
+	input:checked + label {
+		background-color: c.$blue;
+        border-radius: 5px;
+
+		img {
+			width: 70%;
+			display: block;
+		}
+	}
+}
